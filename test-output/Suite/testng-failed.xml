@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test name="Test2(failed)" parallel="tests">
+    <parameter name="URL" value="https://www.airvistara.com/trip/"/>
+    <parameter name="Browser" value="IE"/>
+    <classes>
+      <class name="test.Testing02">
+        <methods>
+          <include name="TearDown"/>
+          <include name="FlightLogin" invocation-numbers="0 1"/>
+          <include name="Initialize"/>
+        </methods>
+      </class> <!-- test.Testing02 -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
